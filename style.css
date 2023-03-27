@@ -85,7 +85,7 @@ button:hover{
 }
 
 /* Mobile Devices with screen width less than 580px: Smartphones.. */
-@media screen and (max-width:580px){
+@media (max-width:580px){
   /* Navbar styles */
   .navbar{
     padding:15px 20px;display:flex;align-items:center;justify-content:space-between;
@@ -243,7 +243,7 @@ button:hover{
 
 
 /* Mobile devices with screen width greater than 500px and less than 860px: Tablets.. */
-@media screen and (min-width:600px){
+@media (min-width:600px){
   .navbar{
     padding:15px 40px;display:flex;align-items:center;justify-content:space-between;
   }
@@ -317,7 +317,7 @@ button:hover{
 }
 
 /* Desktop devices with screen width greater than 860px: Laptops, Desktops, iPads, Notebooks etc */
-@media screen and (min-width:860px){
+@media (min-width:860px){
   /* Navbar styles */
   .navbar{
     padding:20px 80px;display:flex;align-items:center;justify-content:space-between;
@@ -355,6 +355,15 @@ button:hover{
     font-weight:bold;
     border:0;
     flex-shrink:0;
+  }
+  .navmenu ul li.cta-link {
+    border: 0;
+  }
+  .navmenu ul li.cta-link button {
+    background: rgba(225, 225, 225, 0.09);
+    min-width:100px;
+    padding: 7px 13px;
+    margin: 0 20px;
   }
   .navmenu ul li a {
     padding:7px 13px;
