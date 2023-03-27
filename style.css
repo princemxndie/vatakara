@@ -20,9 +20,6 @@ p{
 a{
   color:inherit;
 }
-ul{
-  line-height:130%;
-}
 button{
   width:100%;background:unset;font-size:inherit;border-radius:10px;border:0;
 }
@@ -115,6 +112,15 @@ button:hover{
     top:0;
     bottom:0;
   }
+  .navmenu ul li{
+    line-height:300%;
+    font-size:20px;
+    font-weight:bold;
+    border-bottom:0.8px solid var(--light);
+  }
+  .navmenu ul li a{
+    padding:10px 25px;
+  }
   .navbar .togglers .toggle-btn{
     min-width:45px;
     max-width:45px;
@@ -177,6 +183,15 @@ button:hover{
     position:fixed;
     top:0;
     bottom:0;
+  }
+  .navmenu ul li {
+    line-height: 300%;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 0.8px solid var(--light);
+  }
+  .navmenu ul li a {
+    padding: 10px 25px;
   }
   .navbar .togglers .toggle-btn{
     min-width:45px;
@@ -243,6 +258,15 @@ button:hover{
     top:0;
     bottom:0;
   }
+  .navmenu ul li {
+    line-height: 300%;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 0.8px solid var(--light);
+  }
+  .navmenu ul li a {
+    padding: 10px 25px;
+  }
   .navbar .togglers .toggle-btn{
     min-width:45px;
     max-width:45px;
@@ -303,12 +327,24 @@ button:hover{
     min-width:250px;
     height:auto;
     padding:0;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    grid-auto-flow:column;
-    gap:0;
+    display:block;
     overflow-y:hidden;
     position:relative;
+  }
+  .navmenu ul{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,auto));
+    grid-auto-flow:column;
+    gap:0;
+  }
+  .navmenu ul li {
+    line-height:100%;
+    font-size:20px;
+    font-weight:bold;
+    border:0;
+  }
+  .navmenu ul li a {
+    padding:7px 13px;
   }
   .navbar .togglers .toggle-btn{
     display:none;
@@ -316,7 +352,7 @@ button:hover{
   
   /* Header styles */
   .header{
-    width:100%;height:auto;padding:80px 80px 0 80px;display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,auto));gap:80px;grid-auto-flow:row;align-content:center;justify-items:center;position:relative;
+    width:100%;height:auto;padding:80px 80px 0 80px;display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,auto));gap:80px;grid-auto-flow:column;align-content:center;justify-items:center;position:relative;
   }
   .header-text{
     width:100%;
