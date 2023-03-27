@@ -118,6 +118,17 @@ button:hover{
     font-weight:bold;
     border-bottom:0.8px solid var(--light);
   }
+  
+  .navmenu ul li.cta-link{
+    border:0;
+  }
+  .navmenu ul li.cta-link button {
+    background:rgba(225,225,225,0.09);
+    width:90%;
+    padding:7px 13px;
+    margin:40px 10px 0 10px;
+  }
+  
   .navmenu ul li a{
     padding:10px 25px;
   }
@@ -325,6 +336,7 @@ button:hover{
   .navmenu{
     width:100%;
     min-width:250px;
+    max-width:70%;
     height:auto;
     padding:0;
     display:block;
@@ -332,16 +344,17 @@ button:hover{
     position:relative;
   }
   .navmenu ul{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(150px,auto));
-    grid-auto-flow:column;
-    gap:0;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
   }
   .navmenu ul li {
     line-height:100%;
     font-size:20px;
     font-weight:bold;
     border:0;
+    flex-shrink:0;
   }
   .navmenu ul li a {
     padding:7px 13px;
